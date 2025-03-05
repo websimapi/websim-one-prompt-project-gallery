@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Prompt Project Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="elevator-scene">
+        <div class="elevator">
+            <div class="elevator-doors">
+                <div class="door left-door"></div>
+                <div class="door right-door"></div>
+            </div>
+            <div class="elevator-interior">
+                <div class="back-wall"></div>
+                <div class="side-wall left-wall"></div>
+                <div class="side-wall right-wall"></div>
+                <div class="floor"></div>
+                <div class="ceiling"></div>
+                <div class="control-panel">
+                    <div class="floor-buttons">
+                        <!-- Floor buttons will be added dynamically -->
+                    </div>
+                    <div class="close-button">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="iframe-container">
+                    <iframe id="project-frame" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="loading-screen">
+        <div class="loading-text">Loading Elevator...</div>
+        <div class="loading-bar">
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+
+    <div class="prompt-badge">
+        <span class="badge-circle">1</span>
+        <span class="badge-text">prompt</span>
+    </div>
+
+    <div class="fullscreen-overlay">
+        <div class="fullscreen-controls">
+            <button class="exit-fullscreen">Exit</button>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
